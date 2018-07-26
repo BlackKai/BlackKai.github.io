@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css-navbar.css">
+    <link rel="stylesheet" href="css/css-banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", 標楷體, DFKai-SB, sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            margin-bottom: 40px;
+
+        }
+
+        #main {
+            width: 1163px;
+            margin: 0 auto;
+            padding: 0 16.5px;
+        }
+
+
+
+        h2 {
+            text-align: center;
+
+        }
+
+        .about_pic {
+            width: 50%;
+            height: 400px;
+            float: left;
+            display: inline-block;
+        }
+
+        .pic {
+            width: 100%;
+            height: 400px;
+        }
+
+        h4 {
+            width: 50%;
+            float: left;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            line-height: 30px;
+            height: 120px;
+            padding: 0 15px;
+            box-sizing: border-box;
+
+        }
+
+        .Section {
+            margin-bottom: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .Section1_main {
+            margin-bottom: 40px;
+        }
+
+        .news {
+            width: 90%;
+            height: 397px;
+            margin: 80px 5%;
+
+        }
+
+        .news_container {
+            width: 33%;
+            height: 397px;
+            float: left;
+        }
+
+        .news_container>img {
+            width: 90%;
+            height: 200px;
+            margin: 15px 5%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+            display: none;
+
+        }
+
+        .swiper.active {
+            display: block;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .scape_menu {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .button {
+            width: 30.5%;
+            display: inline-block;
+            font-size: 24px;
+            margin: 15px 1%;
+            border: 2px solid black;
+            box-sizing: border-box;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <!-- navbar -->
+        <div id="nav">
+            <div class="container_nav">
+                <div class="logo">
+                    <img src="" alt="logo">
+                </div>
+                <div class="navbar">
+                    <ul class="menu">
+                        <li class="relative">
+                            <a href="">園區簡介</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="">成立背景</a>
+                                </li>
+                                <li>
+                                    <a href="">未來願景</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="">園地風采</a>
+                        </li>
+                        <li>
+                            <a href="">生鮮供應</a>
+                        </li>
+                        <li class="relative">
+                            <a href="">旅遊體驗</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="">親力親為</a>
+                                </li>
+                                <li>
+                                    <a href="">良辰美景</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">連絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <div class="animation">
+
+                <div style="background-image: url(img/banner/banner-1.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-2.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-3.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-4.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-5.jpg);">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!-- 園區簡介 -->
+        <div class="Section Section1">
+            <h1>園區簡介</h1>
+            <!-- 新聞事件 -->
+            <div class="Section1_main">
+                <h2>成立背景</h2>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        近代科技發展快速，生活中充斥著各種化學物質，就連平常吃的食物、食品也沒能逃過一劫；自古以來，只要牽扯到利益，總會有無良商家耍小聰明，從中獲取暴利，飲食做為人類生活最重要的一塊，讓人無法安心，又如何能專注於發展其他項目?
+                    </h4>
+                </div>
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/timeline.jpg" alt="timeline">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- 成立目的 -->
+            <div class="Section1_main">
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/自然農法.jpg" alt="farmworking">
+                </div>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        園區名為初心，成立目的在於供應以自然工法培養之食材以及加工食品，並開放部分園區供大眾參觀、遊憩。
+                        <p></p>
+                        利益當前，能守著本心不被誘惑的有幾人?最終的結果往往是因小失大。
+                        <p></p>
+                        初心之名意即在人生的起點所許下的夢想，是一生渴望抵達的目標，作為園區之名，時時提醒著莫因利益等誘惑而丟了本心，失去夢想
+                    </h4>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!-- future -->
+
+            <div>
+                <h2>未來願景</h2>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        以環境生態保護作為起點推廣相關產業發展，伴隨著安全無毒生鮮的出產進行市場供需調節，能力越大責任越大，獲益的同時也需要帶動相關產業傳統的保存，同時維護環境生態，達到永續發展的目標。
+                    </h4>
+                </div>
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/future.jpg" alt="future">
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <!-- 最新消息 -->
+        <div class="Section Section2" style="position: relative;">
+            <h1>最新消息</h1>
+            <div class="news">
+                <div class="news_container">
+                    <img src="img/news/hide.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">人員招募簡章</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">人事處</h4>
+                </div>
+                <div class="news_container">
+                    <img src="img/news/sponsor.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">企業贊助整合</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">公關處</h4>
+                </div>
+                <div class="news_container">
+                    <img src="img/news/production.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">新品成果發表</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">研發處</h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div style="position: absolute;bottom: 0;right: 0;">more...</div>
+        </div>
+        <!-- 園地風采 -->
+        <div class="Section Section3">
+            <h1>園地風采</h1>
+            <div class="scape">
+                <div class="scape_menu">
+                    <div class="button" id="btn_1">森羅萬象</div>
+                    <div class="button" id="btn_2">平步青雲</div>
+                    <div class="button" id="btn_3">鬼斧神工</div>
+                </div>
+                <div class="swiper active" id="swiper_content1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper" id="swiper_content2">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper" id="swiper_content3">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 生鮮供應 -->
+        <div class="Section Section4">
+            <h1>生鮮供應</h1>
+        </div>
+        <!-- 旅遊體驗 -->
+        <div class="Section Section5">
+            <h1>旅遊體驗</h1>
+        </div>
+        <!-- 連絡我們 -->
+        <div class="Section Section6">
+            <h1>聯絡我們</h1>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        // scape btn
+        $("#btn_1").click(function () {
+            console.log(123)
+            $("#swiper_content1").addClass("active");
+            $("#swiper_content2").removeClass("active");
+            $("#swiper_content3").removeClass("active");
+        });
+
+        $("#btn_2").click(function () {
+            console.log(456)
+            $("#swiper_content1").removeClass("active");
+            $("#swiper_content2").addClass("active");
+            $("#swiper_content3").removeClass("active");
+        });
+
+        $("#btn_3").click(function () {
+            console.log(789)
+            $("#swiper_content1").removeClass("active");
+            $("#swiper_content2").removeClass("active");
+            $("#swiper_content3").addClass("active");
+        });
+    </script>
+</body>
+
+</html>
