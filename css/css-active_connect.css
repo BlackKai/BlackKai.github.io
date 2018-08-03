@@ -1,0 +1,41 @@
+/* active */
+.travel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.travel_container {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.travel_container>img {
+    width: 95%;
+    height: 355px;
+}
+/* connect */
+.connect {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.connect_container {
+    width: 50%;
+    float: left;
+}
+
+.connect_container>iframe {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.connect_container>a {
+    width: 100%;
+    height: 20%;
+    display: block;
+    padding: 5px 80px;
+    font-size: 24px;
+    text-decoration: none;
+}

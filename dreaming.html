@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初心牧場 dreaming farm</title>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="bookmark" href="img/icon/favicon.ico" />
+    <link rel="stylesheet" href="css/css-navbar.css">
+    <link rel="stylesheet" href="css/css-banner.css">
+    <link rel="stylesheet" href="css/css-about.css">
+    <link rel="stylesheet" href="css/css-view.css">
+    <link rel="stylesheet" href="css/css-active_connect.css">
+    <link rel="stylesheet" href="css/css-gotop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", 標楷體, DFKai-SB, sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            margin-bottom: 40px;
+
+        }
+
+        #main {
+            width: 1163px;
+            margin: 0 auto;
+            padding: 0 16.5px;
+        }
+
+        .Section {
+            margin-bottom: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+
+
+
+        /* button */
+
+        .product {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .product_L {
+            width: 50%;
+            float: left;
+        }
+
+        .product_R {
+            width: 50%;
+            float: left;
+
+        }
+
+        .product_L>h2 {
+            width: 30%;
+            margin: 0;
+            float: left;
+        }
+
+        .product_R>h2 {
+            width: 30%;
+            margin: 0;
+            float: left;
+        }
+
+        /* product nav */
+
+        .product_list {
+            width: 100%;
+        }
+
+        .item {
+            width: 100%;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .option {
+            margin: 0;
+            text-align: center;
+            display: flex;
+        }
+
+        .option>li {
+            display: inline-block;
+            flex: 1 1 auto;
+        }
+
+        .option>li>a {
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 10px 0;
+            display: block;
+        }
+
+        .option>li:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        .option>li:nth-child(odd) {
+            background-color: wheat;
+        }
+
+        .item_hidden {
+            width: 100%;
+            display: none;
+        }
+
+        .item_hidden.active {
+            display: block;
+        }
+
+        /* @media only screen and (max-width: 1280px) {
+            #nav {
+                width: 100%;
+                background-color: rgba(85, 255, 85, 0.5);
+                height: 50px;
+            }
+            .container_nav {
+                height: 50px;
+                width: 100%;
+                margin: 0;
+            }
+            .logo {
+                width: 20%;
+                height: 50px;
+                margin-right: 14px;
+                float: left;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Go Top 按鈕+動畫 start -->
+    <div id="gotop">
+        <img src="img/基本圖形/logo.jpg" alt="gotop" style="width:100%;">
+    </div>
+    <div id="header">
+        <!-- navbar -->
+        <div id="nav">
+            <div class="container_nav">
+                <div class="logo">
+                    <img src="img/icon/logo.jpg" alt="logo" style="height: 100%;width: 100%;">
+                </div>
+                <div class="navbar">
+                    <ul class="menu">
+                        <li class="relative">
+                            <a href="#about">園區簡介</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="">成立背景</a>
+                                </li>
+                                <li>
+                                    <a href="">未來願景</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#news">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="#view">園地風采</a>
+                        </li>
+                        <li>
+                            <a href="#product">生鮮供應</a>
+                        </li>
+                        <li class="relative">
+                            <a href="#activity">旅遊體驗</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="">親力親為</a>
+                                </li>
+                                <li>
+                                    <a href="">良辰美景</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#connect">連絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <div class="animation">
+
+                <div style="background-image: url(img/banner/banner-1.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-2.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-3.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-4.jpg);">
+
+                </div>
+                <div style="background-image: url(img/banner/banner-5.jpg);">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!-- 園區簡介 -->
+        <div class="Section Section1" id="about">
+            <h1>園區簡介</h1>
+            <!-- 新聞事件 -->
+            <div class="Section1_main">
+                <h2>成立背景</h2>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        近代科技發展快速，生活中充斥著各種化學物質，就連平常吃的食物、食品也沒能逃過一劫；自古以來，只要牽扯到利益，總會有無良商家耍小聰明，從中獲取暴利，飲食做為人類生活最重要的一塊，讓人無法安心，又如何能專注於發展其他項目?
+                    </h4>
+                </div>
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/timeline.jpg" alt="timeline">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- 成立目的 -->
+            <div class="Section1_main">
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/自然農法.jpg" alt="farmworking">
+                </div>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        園區名為初心，成立目的在於供應以自然工法培養之食材以及加工食品，並開放部分園區供大眾參觀、遊憩。
+                        <p></p>
+                        利益當前，能守著本心不被誘惑的有幾人?最終的結果往往是因小失大。
+                        <p></p>
+                        初心之名意即在人生的起點所許下的夢想，是一生渴望抵達的目標，作為園區之名，時時提醒著莫因利益等誘惑而丟了本心，失去夢想
+                    </h4>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!-- future -->
+
+            <div>
+                <h2>未來願景</h2>
+                <div>
+                    <!-- 內文 -->
+                    <h4>
+                        以環境生態保護作為起點推廣相關產業發展，伴隨著安全無毒生鮮的出產進行市場供需調節，能力越大責任越大，獲益的同時也需要帶動相關產業傳統的保存，同時維護環境生態，達到永續發展的目標。
+                    </h4>
+                </div>
+                <div class="about_pic">
+                    <img class="pic" src="img/about/farmworking/future.jpg" alt="future">
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <!-- 最新消息 -->
+        <div class="Section Section2" id="news" style="position: relative;">
+            <h1>最新消息</h1>
+            <div class="news">
+                <div class="news_container">
+                    <img src="img/news/hide.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">人員招募簡章</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">人事處</h4>
+                </div>
+                <div class="news_container">
+                    <img src="img/news/sponsor.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">企業贊助整合</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">公關處</h4>
+                </div>
+                <div class="news_container">
+                    <img src="img/news/production.jpg" alt="hide">
+                    <h3 style="text-align: center">2018/06/25</h3>
+                    <h3 style="text-align: center;font-weight:bolder;text-decoration-line: underline">新品成果發表</h3>
+                    <h4 style="text-align: center;height: 30px;width: 100%;">研發處</h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div style="position: absolute;bottom: 0;right: 0;">more...</div>
+        </div>
+        <!-- 園地風采 -->
+        <div class="Section Section3" id="view">
+            <h1>園地風采</h1>
+            <div class="scape">
+                <div class="scape_menu">
+                    <input type="button" value="森羅萬象" style="width: 32.9%;;height:40px;font-size:20px;" id="btn_1">
+                    <input type="button" value="平步青雲" style="width: 32.9%;;height:40px;font-size:20px;" id="btn_2">
+                    <input type="button" value="鬼斧神工" style="width: 32.9%;;height:40px;font-size:20px;" id="btn_3">
+                </div>
+                <div class="swiper active" id="swiper_content1">
+                    <div class="swiper-container animal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper" id="swiper_content2">
+                    <div class="swiper-container walker">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper" id="swiper_content3">
+                    <div class="swiper-container nature">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/風景圖-景色/鬼斧-01春.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                            <div class="swiper-slide">
+
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 生鮮供應 -->
+        <div class="Section Section4" id="product">
+            <h1>生鮮供應</h1>
+            <!-- button -->
+            <div style="margin-bottom: 20px">
+                <!-- top -->
+                <div class=" product">
+                    <!-- left -->
+                    <div class=" product_L">
+                        <h2>主產</h2>
+                        <input type="button" value="農業" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="漁業" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="牧業" style="font-size: 18px;width: 70px;">&nbsp;
+                        <div class="clear"></div>
+                    </div>
+                    <!-- right -->
+                    <div class=" product_R">
+                        <h2>副產</h2>
+                        <input type="button" value="蛋類" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="奶類" style="font-size: 18px;width: 70px;">&nbsp;
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- bottom -->
+                <div class=" product">
+                    <!-- left -->
+                    <div class=" product_L">
+                        <h2>進口</h2>
+                        <input type="button" value="歐美" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="亞洲" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="大洋洲" style="font-size: 18px;width: 70px;">&nbsp;
+                        <div class="clear"></div>
+                    </div>
+
+                    <!-- right -->
+                    <div class=" product_R">
+                        <h2>加工</h2>
+                        <input type="button" value="發酵" style="font-size: 18px;width: 70px;">&nbsp;
+                        <input type="button" value="未發酵" style="font-size: 18px;width: 70px;">&nbsp;
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- item -->
+            <div class="product_list">
+                <!-- main -->
+                <nav class="item item1_crop active">
+                    <ul class="option">
+                        <li id="btn_1_crop">
+                            <a href="#1_crop">主食類</a>
+                        </li>
+                        <li id="btn_2_crop">
+                            <a href="#2_crop">蔬菜類</a>
+                        </li>
+                        <li id="btn_3_crop">
+                            <a href="#3_crop">水果類</a>
+                        </li>
+                        <li id="btn_4_crop">
+                            <a href="#4_crop">季節品</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item1_meat">
+                    <ul class="option">
+                        <li>
+                            <a href="">畜類</a>
+                        </li>
+                        <li>
+                            <a href="">禽類</a>
+                        </li>
+                        <li>
+                            <a href="">爬蟲類</a>
+                        </li>
+                        <li>
+                            <a href="">限量品</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item1_aqua">
+                    <ul class="option">
+                        <li>
+                            <a href="">鮮魚</a>
+                        </li>
+                        <li>
+                            <a href="">蝦蟹</a>
+                        </li>
+                        <li>
+                            <a href="">貝類</a>
+                        </li>
+                        <li>
+                            <a href="">其他</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- import -->
+                <nav class="item item2_EU_US">
+                    <ul class="option">
+                        <li>
+                            <a href="">肉品</a>
+                        </li>
+                        <li>
+                            <a href="">作物</a>
+                        </li>
+                        <li>
+                            <a href="">水產</a>
+                        </li>
+                        <li>
+                            <a href="">特產</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item2_asia">
+                    <ul class="option">
+                        <li>
+                            <a href="">肉品</a>
+                        </li>
+                        <li>
+                            <a href="">作物</a>
+                        </li>
+                        <li>
+                            <a href="">水產</a>
+                        </li>
+                        <li>
+                            <a href="">特產</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item2_Pacific_Ocean">
+                    <ul class="option">
+                        <li>
+                            <a href="">肉品</a>
+                        </li>
+                        <li>
+                            <a href="">作物</a>
+                        </li>
+                        <li>
+                            <a href="">水產</a>
+                        </li>
+                        <li>
+                            <a href="">特產</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- by-pro -->
+                <nav class="item item3 item3_milk">
+                    <ul class="option">
+                        <li>
+                            <a href="">正常供應</a>
+                        </li>
+                        <li>
+                            <a href="">限時限量</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item3 item3_egg">
+                    <ul class="option">
+                        <li>
+                            <a href="">正常供應</a>
+                        </li>
+                        <li>
+                            <a href="">限時限量</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- process -->
+                <nav class="item item4_ferment">
+                    <ul class="option">
+                        <li>
+                            <a href="">食材</a>
+                        </li>
+                        <li>
+                            <a href="">飲品</a>
+                        </li>
+                        <li>
+                            <a href="">冰品</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="item item4_unfermented">
+                    <ul class="option">
+                        <li>
+                            <a href="">食材</a>
+                        </li>
+                        <li>
+                            <a href="">飲品</a>
+                        </li>
+                        <li>
+                            <a href="">冰品</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- product -->
+            <div class="commodity">
+                <div id="1_crop" class="item_hidden active" style="width: 95%;margin: 2.5%">
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">稻米</h3>
+                        <img src="img/product/rice.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">123</h4>
+                    </div>
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">小麥</h3>
+                        <img src="img/product/wheat.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">123</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">玉米</h3>
+                        <img src="img/product/corn.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">123</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">馬鈴薯</h3>
+                        <img src="img/product/sweet potato.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">123</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">芋頭</h3>
+                        <img src="img/product/taro.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">123</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="2_crop" class="item_hidden" style="width: 95%;margin: 2.5%">
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">稻米</h3>
+                        <img src="img/product/rice.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">456</h4>
+                    </div>
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">小麥</h3>
+                        <img src="img/product/wheat.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">456</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">玉米</h3>
+                        <img src="img/product/corn.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">456</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">馬鈴薯</h3>
+                        <img src="img/product/sweet potato.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">456</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">芋頭</h3>
+                        <img src="img/product/taro.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">456</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="3_crop" class="item_hidden" style="width: 95%;margin: 2.5%">
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">稻米</h3>
+                        <img src="img/product/rice.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">789</h4>
+                    </div>
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">小麥</h3>
+                        <img src="img/product/wheat.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">789</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">玉米</h3>
+                        <img src="img/product/corn.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">789</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">馬鈴薯</h3>
+                        <img src="img/product/sweet potato.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">789</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">芋頭</h3>
+                        <img src="img/product/taro.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">789</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="4_crop" class="item_hidden" style="width: 95%;margin: 2.5%">
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">稻米</h3>
+                        <img src="img/product/rice.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">0</h4>
+                    </div>
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">小麥</h3>
+                        <img src="img/product/wheat.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">0</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">玉米</h3>
+                        <img src="img/product/corn.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">0</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">馬鈴薯</h3>
+                        <img src="img/product/sweet potato.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">0</h4>
+                    </div>
+
+                    <div style="width: 20%;float: left;">
+                        <h3 style="margin: 5px auto;text-align: center;">芋頭</h3>
+                        <img src="img/product/taro.jpg" alt="rice" style="width: 95%;height: 25vh;padding:0 2.5%;">
+                        <h4 style="width: 100%;text-align: justify;padding: 0 2.5%;margin: 10px 0;">0</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 旅遊體驗 -->
+        <div class="Section Section5" id="activity">
+            <h1>旅遊體驗</h1>
+            <div class="travel">
+                <div class="travel_container">
+                    <h2>親力親為</h2>
+                    <h3>各式活動，讓您充分體驗農場生活</h3>
+                    <img src="img/travel/active.jpg" alt="active">
+                </div>
+                <div class="travel_container">
+                    <h2>良辰美景</h2>
+                    <h3>隨風起舞，與您分享各季節的視覺饗宴</h3>
+                    <img src="img/travel/view.jpg" alt="view">
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <!-- 連絡我們 -->
+        <div class="Section Section6" id="connect">
+            <h1>聯絡我們</h1>
+            <div class="connect">
+                <div class="connect_container">
+                    <!-- google map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.5352174744617!2d120.55623691498778!3d24.082666684426627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346938e9dcf30825%3A0x68f868c7bf07ea0a!2zNTAw5b2w5YyW57ij5b2w5YyW5biC6YCy5b636LevMeiZnw!5e0!3m2!1szh-TW!2stw!4v1532588906816"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="connect_container">
+                    <a href="">
+                        <img src="img/icon/facebook.jpg" alt="facebook" style="width: 50px;height: 50px;border-radius: 100%;margin-top: 10px;">
+                        <font align="center">粉絲專頁</font>
+                    </a>
+                    <a href="">
+                        <img src="img/icon/instagram.jpg" alt="instagram" style="width: 50px;height: 50px;border-radius: 100%;margin-top: 10px;">
+                        <font align="center">IG專頁</font>
+                    </a>
+                    <a href="">
+                        <img src="img/icon/phone.jpg" alt="phone" style="width: 50px;height: 50px;border-radius: 100%;margin-top: 10px;">
+                        <font align="center">04-7172737</font>
+                    </a>
+                    <a href="">
+                        <img src="img/icon/mail.jpg" alt="mail" style="width: 50px;height: 50px;border-radius: 100%;margin-top: 10px;">
+                        <font align="center">123@gmail.com</font>
+                    </a>
+                    <a href="">
+                        <img src="img/icon/adress.jpg" alt="adress" style="width: 50px;height: 50px;border-radius: 100%;margin-top: 10px;">
+                        <font align="center">彰化縣彰化市進德路1號</font>
+                    </a>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="background-color: rgba(14, 206, 126 , 1)">
+        <h2 style="padding: 1vh 0;margin:0 ;">僅用於課程學習用途，素材如侵權，請來信告知。</h2>
+    </div>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.animal', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper1 = new Swiper('.walker', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper2 = new Swiper('.nature', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // scape btn
+        $("#btn_1").click(function () {
+            console.log(123)
+            $("#swiper_content1").addClass("active");
+            $("#swiper_content2").removeClass("active");
+            $("#swiper_content3").removeClass("active");
+            swiper.update();
+        });
+
+        $("#btn_2").click(function () {
+            console.log(456)
+            $("#swiper_content1").removeClass("active");
+            $("#swiper_content2").addClass("active");
+            $("#swiper_content3").removeClass("active");
+            swiper1.update();
+        });
+
+        $("#btn_3").click(function () {
+            console.log(789)
+            $("#swiper_content1").removeClass("active");
+            $("#swiper_content2").removeClass("active");
+            $("#swiper_content3").addClass("active");
+            swiper2.update();
+        });
+        // gotop
+        $(window).scroll(function () {
+            var window_height = $(window).scrollTop();
+
+            if (window_height > 199) {
+                $("#gotop").addClass("block");
+            } else {
+                $("#gotop").removeClass("block");
+            }
+
+            console.log(window_height);
+        });
+        $("#gotop").click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 2500, "swing");
+        });
+        // product
+        $("#btn_1_crop").click(function () {
+            console.log(123)
+            $("#1_crop").addClass("active");
+            $("#2_crop").removeClass("active");
+            $("#3_crop").removeClass("active");
+            $("#4_crop").removeClass("active");
+
+        });
+
+        $("#btn_2_crop").click(function () {
+            console.log(456)
+            $("#1_crop").removeClass("active");
+            $("#2_crop").addClass("active");
+            $("#3_crop").removeClass("active");
+            $("#4_crop").removeClass("active");
+        });
+
+        $("#btn_3_crop").click(function () {
+            console.log(789)
+            $("#1_crop").removeClass("active");
+            $("#2_crop").removeClass("active");
+            $("#3_crop").addClass("active");
+            $("#4_crop").removeClass("active");
+        });
+        $("#btn_4_crop").click(function () {
+            console.log(012)
+            $("#1_crop").removeClass("active");
+            $("#2_crop").removeClass("active");
+            $("#3_crop").removeClass("active");
+            $("#4_crop").addClass("active");
+        });
+        $('.option li a').click(function (event) {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>
